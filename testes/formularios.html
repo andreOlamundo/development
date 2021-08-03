@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/intranet.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.docs').hide();
+                $('a.menu').on('click',function(event){
+                    event.preventDefault();
+                    var value = $(this).attr("title");
+                    $('#'+value).toggle();
+                    //$('p ~ ul:first').toggle();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <header id="main-header" class="row">
+                <h1>Intranet Sanrio - SDB</h1>
+            </header>
+            <div class="row">
+                <div id="menu" class="col-md-3">
+
+                </div>
+
+                <div class="col-md-9">
+                    <article>
+                    <header><h2>Formulários</h2></header>
+
+                    <p><span class="glyphicon glyphicon-file"></span> <a href="#" class="menu" title='comercial'>COMERCIAL</a></p>
+                    <ul id="comercial" class="docs">
+                        <li><a href="Formularios/Amendment Request Form - Latam.doc">Amendment Request (Latam)</a></li>
+                        <li><a href="Formularios/Prospective Licensee Application Latam.docx">PLA (Latam)</a></li>
+                        <li><a href="Formularios/Deal Proposal Latam.doc">Deal Proposal (Latam)</a></li>
+                        <li><a href="Formularios/Amendment Request Form - Brazil.docx">Solicitação de Aditamento (Brasil)</a></li>
+                        <li><a href="Formularios/Prospective Licensee Application - Brazil.doc">PLA (Brasil)</a></li>
+                        <li><a href="Formularios/Deal Proposal - Brazil.docx">Deal Proposal (Brasil)</a></li>
+                        <li><a href="Formularios/Trafego de Contratos _F JUR 001 Agosto 2014.doc">Tráfego de Contratos</a></li>
+                     </ul>
+                    <p><span class="glyphicon glyphicon-file"></span> <a href="#" class="menu" title='financeiro'>FINANCEIRO</a></p>
+                    <ul id="financeiro" class="docs">
+                        <li><a href="Formularios/PAR.docx">PAR</a></li>
+                        <li><a href="Formularios/Despesas.xls">Despesas</a></li>
+                        <li><a href="Formularios/Travel%20Authorization.doc">Autorização de viagem</a></li>
+                        
+                    </ul>
+                    <p><span class="glyphicon glyphicon-file"></span> <a href="#" class="menu" title="rh">RECURSOS HUMANOS</a></p>
+                    <ul id='rh' class="docs">
+                        <li><a href="Formularios/SESC.pdf">SESC</a></li>
+                        <li><a href="Formularios/solicitacao_ferias.doc">Solicitação de Férias</a></li>
+                        <li><a href="Formularios/SMP.doc">Movimentação de Pessoal</a></li>
+                    </ul>
+                    <p><span class="glyphicon glyphicon-file"></span> <a href="#" class="menu" title="ti">TECNOLOGIA DA INFORMAÇÃO</a></p>
+                    <ul id='ti' class="docs">
+                        <li><a href="Formularios/MDMS.doc">MDMS</a></li>
+                        <li><a href="Formularios/Formul%C3%A1rio%20Solicita%C3%A7%C3%A3o%20de%20Servi%C3%A7os%20de%20Tecnologia%20da%20Informa%C3%A7%C3%A3o.doc">TI</a></li>
+                        <li><a href="Formularios/Ocorrencias_Microsiga.DOC">Ocorrências Microsiga/Protheus</a></li>
+                    </ul>
+                    <p><span class="glyphicon glyphicon-file"></span> <a href="#" class="menu" title='outros'>OUTROS</p>
+                    <ul id='outros' class="docs">
+                        <li><a href="Formularios/Fax.doc">Fax</a></li>
+                        <li><a href="Formularios/MAM.doc">MAM</a></li>
+                        <li><a href="Formularios/Modelo.doc">Modelo</a></li>
+                        <li><a href="Formularios/CREATIVE_REQUEST.pdf">Creative Request</a></li>
+                    </ul>
+                    </article>
+                </div>
+            </div>
+            <div id="footer" class="row">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

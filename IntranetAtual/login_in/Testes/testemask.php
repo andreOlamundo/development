@@ -1,0 +1,2 @@
+            function myFunction() {
+    document.getElementById("myFrame").srcdoc = "<input type='tel' required='required' placeholder='R$ ' maxlength='15' name='RF10_VALORITEM[]' id='meu-input' onblur='calcular()' pattern='([0-9]{1,3}\.)?[0-9]{1,3},[0-9]{2}$'' class='valor' data-thousands='.' data-decimal=',''>";

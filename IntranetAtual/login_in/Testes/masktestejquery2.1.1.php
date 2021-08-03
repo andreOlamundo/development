@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js"></script>
+</head>
+<body>
+
+<input type="text" id="meuDinheiro" data-thousands="." data-decimal="," data-prefix="R$ " />
+
+
+
+</body>
+</html>
+
+<script>
+$("#meuDinheiro").maskMoney();
+
+</script>

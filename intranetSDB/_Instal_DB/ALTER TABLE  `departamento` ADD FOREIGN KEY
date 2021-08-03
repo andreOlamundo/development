@@ -1,0 +1,3 @@
+ALTER TABLE  `departamento` ADD FOREIGN KEY (  `cod_depto` ) REFERENCES  `DB_INTRANET`.`cargo` (
+`cod_depto`
+) ON DELETE RESTRICT ON UPDATE CASCADE ;

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="description" content="PROJETO INTRANETSDB">
+    <meta name="author" content="TI SANRIO"> 
+
+
+
+
+<body>
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Fomulario PAR</legend>
+
+<!-- Select Multiple -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="RF2_Departamento_Solicitante">Departamento Solicitante</label>
+  <div class="col-md-4">
+    <input list="RF2_Departamento_Solicitante" name="RF2_Departamento_Solicitante" class="form-control" multiple="multiple">
+<datalist id="RF2_Departamento_Solicitante">
+      <option value="Dir Geral">
+      <option value="Dir Licenciamento">
+      <option value="Dir Novos Negócios">
+      <option value="Dir Vendas Diretas">
+      <option value="Depto Adm Fin">
+      <option value="Controladoria">
+      <option value="Depto Adm Fin">
+      <option value="Importação">
+      <option value="Depto Adm Fin">
+      <option value="Logística">
+      <option value="Depto Adm Fin">
+      <option value="R.H">
+      <option value="Depto Adm Fin">
+      <option value="Tec. Inf.">
+      <option value="Depto Licenc.">
+      <option value="Internacionais">
+      <option value="Depto Licenc. Nacionais">
+      <option value="Depto Marketing">
+      <option value="Depto Marketing">
+      <option value="Fundo Promoção">
+      <option value="Depto Comercial">
+      <option value="Depto Design">
+      <option value="Depto WEB">
+      <option value="Depto Adm Fin.">
+      </datalist>
+
+    </input>
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="RF8_Decricao_Justificativa">Descrição / Justificativa</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="RF8_Decricao_Justificativa" name="RF8_Decricao_Justificativa">Digite aqui:</textarea>
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="RF9_REDP">Retornos Estimados do Projeto</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="RF9_REDP" name="RF9_REDP">Digite Aqui:</textarea>
+  </div>
+</div>
+
+<!-- File Button --> 
+<div class="form-group">
+  <label class="col-md-4 control-label" for="RF7_Anexo_De_Documentos">Anexo de Documentos</label>
+  <div class="col-md-4">
+    <input id="RF7_Anexo_De_Documentos" name="RF7_Anexo_De_Documentos" class="input-file" type="file">
+  </div>
+</div>
+
+<!-- Multiple Checkboxes -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="RF6_Ativo_Fixo">Ativo Fixo?</label>
+  <div class="col-md-4">
+  <div class="checkbox">
+    <label for="RF6_Ativo_Fixo-0">
+      <input type="checkbox" name="RF6_Ativo_Fixo" id="RF6_Ativo_Fixo-0" value="1">
+      Sim
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="RF6_Ativo_Fixo-1">
+      <input type="checkbox" name="RF6_Ativo_Fixo" id="RF6_Ativo_Fixo-1" value="2">
+      Não
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Multiple Checkboxes -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="RF5_Previsão_No_Orçamento_Anual">Previsão no orçamento anual?</label>
+  <div class="col-md-4">
+  <div class="checkbox">
+    <label for="RF5_Previsão_No_Orçamento_Anual-0">
+      <input type="checkbox" name="RF5_Previsão_No_Orçamento_Anual" id="RF5_Previsão_No_Orçamento_Anual-0" value="1">
+      Sim
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="RF5_Previsão_No_Orçamento_Anual-1">
+      <input type="checkbox" name="RF5_Previsão_No_Orçamento_Anual" id="RF5_Previsão_No_Orçamento_Anual-1" value="2">
+      Não
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="RF10_Previsão_De_Desembolso_Do_Projeto">Previsão de desembolso do Projeto</label>
+  <div class="col-md-4">
+    <button id="RF10_Previsão_De_Desembolso_Do_Projeto" name="RF10_Previsão_De_Desembolso_Do_Projeto" class="btn btn-warning">Incluir Nova Previsão</button>
+  </div>
+</div>
+
+<!-- Button (Double) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="RF12_Campo_Salvar"></label>
+  <div class="col-md-8">
+    <button id="RF12_Campo_Salvar" name="RF12_Campo_Salvar" class="btn btn-success">Salvar</button>
+    <button id="RF13_Campo_Cancelar" name="RF13_Campo_Cancelar" class="btn btn-danger">Cancelar</button>
+    <button id="RF14_Campo_Imprimir" name="RF14_Campo_Imprimir" class="btn btn-danger">Imprimir</button>
+    <button id="RF14_Campo_Reportar" name="RF15_Campo_Reportar" class="btn btn-danger">Reportar</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</body>
+
+<html>

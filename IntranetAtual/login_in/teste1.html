@@ -1,0 +1,31 @@
+<html>
+<body> 
+<script>function id( el ){        
+return document.getElementById( el );
+}
+function ct_campos( campo ){        
+id('campo4').value += campo.value+' ';
+}
+
+//inserir ponto e virgula em valores
+function moeda(z)  {
+ v = z.value; 
+ v=v.replace(/\D/g,"")  //permite digitar apenas números                
+ v=v.replace(/[0-9]{12}/,"inválido")   //limita pra máximo 999.999.999,99                
+ v=v.replace(/(\d{1})(\d{8})$/,"$1.$2")  //coloca ponto antes dos últimos 8 digitos     
+ v=v.replace(/(\d{1})(\d{5})$/,"$1.$2")  //coloca ponto antes dos últimos 5 digitos                
+ v=v.replace(/(\d{1})(\d{1,2})$/,"$1,$2")    //coloca virgula antes dos últimos 2 digitos                
+ z.value = v; 
+ }
+</script>
+</head>
+<body>       
+<input type="text" name="campo1" onblur="ct_campos( this )"  onKeyUp="moeda(this);" /><br />        
+<input type="text" name="campo2" onblur="ct_campos( this )"  onKeyUp="moeda(this);" /><br />        
+<input type="text" name="campo3" onblur="ct_campos( this )"  onKeyUp="moeda(this);"/><br />        
+<input type="text" name="campo4" id="campo4" />
+<br />
+</body>
+</html>
+</body>
+</html>

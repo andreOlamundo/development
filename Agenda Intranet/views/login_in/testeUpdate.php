@@ -1,0 +1,1 @@
+$sql = "UPDATE users SET ('".$user_id."','".$rf8_dj."','".$rf6_ativofixo."','".$rf5_poa."','".$rf1_data_atual."','".$rf3_numero_par."','".$rf9_redp."','".$rf10_valor_total."','".$user."')";

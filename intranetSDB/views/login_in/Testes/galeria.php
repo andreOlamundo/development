@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>INTRANET_SDB</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="\intranetSDB\images\favicon.png">
+    <link href="\intranetSDB\bootstrap-3.3.7\dist\css\bootstrap.min.css" rel="stylesheet">
+    <link href="\intranetSDB\bootstrap-3.3.7\docs\assets\css\ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link href="dashboard.css" rel="stylesheet">   
+     <script src="\intranetSDB\bootstrap-3.3.7\docs\assets\js\ie-emulation-modes-warning.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <script src="\intranetSDB\js\main_log_in.js"></script>
+     </head>
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <div id="menu_logIn">
+</div> 
+
+
+    <div id="marketing" class="container-fluid">
+      <div class="row">
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+           <h2>Ações & Eventos</h2>
+            <hr class="featurette-divider">
+
+ 
+              <h4 class="well well-sm">Momentos registrados durante<br><strong>Comic Con Experience 2016.</strong><span class="glyphicon glyphicon-tags"></span></h4>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" >
+               <!-- Indicators -->
+               <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+              <li data-target="#myCarousel" data-slide-to="4"></li>
+              <li data-target="#myCarousel" data-slide-to="5"></li>    
+              <li data-target="#myCarousel" data-slide-to="6"></li>
+              <li data-target="#myCarousel" data-slide-to="7"></li>
+              <li data-target="#myCarousel" data-slide-to="9"></li>
+              <li data-target="#myCarousel" data-slide-to="10"></li>
+              <li data-target="#myCarousel" data-slide-to="11"></li>
+              <li data-target="#myCarousel" data-slide-to="12"></li>
+              <li data-target="#myCarousel" data-slide-to="13"></li>
+              <li data-target="#myCarousel" data-slide-to="14"></li>
+              <li data-target="#myCarousel" data-slide-to="15"></li>
+              <li data-target="#myCarousel" data-slide-to="16"></li>
+              <li data-target="#myCarousel" data-slide-to="17"></li>
+              <li data-target="#myCarousel" data-slide-to="18"></li>
+              <li data-target="#myCarousel" data-slide-to="19"></li>
+               </ol>
+                <div class="carousel-inner" role="listbox" style="max-width:100%">
+                        <div class="item active">
+                          <img class="first-slide" src="\intranetSDB\images\CCXP2016\Alta\Sanrio - CCXP 2016.jpg" style="width:100%" alt="First-slide">
+                        </div>
+                        <div class="item">
+                          <img class="second-slide" src="\intranetSDB\images\CCXP2016\Alta\Sanrio - CCXP 2016-5.jpg" style="width:100%"  alt="Second slide">
+                        </div>
+                        <div class="item">
+                          <img class="third-slide" src="\intranetSDB\images\CCXP2016\Alta\Sanrio - CCXP 2016-6.jpg" style="width:100%" alt="Third slide">
+                        </div>
+                           <div class="item">
+                          <img class="third-slide" src="\intranetSDB\images\CCXP2016\Alta\Sanrio - CCXP 2016-24.jpg" style="width:100%" alt="Third slide">
+                        </div>
+                           <div class="item">
+                          <img class="third-slide" src="\intranetSDB\images\CCXP2016\Alta\Sanrio - CCXP 2016-8.jpg" style="width:100%" alt="Third slide">
+                        </div>
+                           <div class="item">
+                          <img class="third-slide" src="\intranetSDB\images\CCXP2016\Alta\Sanrio - CCXP 2016-9.jpg" style="width:100%" alt="Third slide">
+                        </div>
+                           <div class="item">
+                          <img class="third-slide" src="\intranetSDB\images\CCXP2016\Alta\Sanrio - CCXP 2016-10.jpg" style="width:100%" alt="Third slide">
+                        </div>
+                           <div class="item">
+                          <img class="third-slide" src="\intranetSDB\images\CCXP2016\Alta\Sanrio - CCXP 2016-26.jpg" style="width:100%" alt="Third slide">
+                        </div>
+                           <div class="item">
+                          <img class="third-slide" src="\intranetSDB\images\CCXP2016\Alta\Sanrio - CCXP 2016-12.jpg" style="width:100%" alt="Third slide">
+                        </div>
+                           <div class="item">
+                          <img class="third-slide" src="\intranetSDB\images\CCXP2016\Alta\Sanrio - CCXP 2016-13.jpg" style="width:100%"alt="Third slide">
+                        </div>
+                           <div class="item">
+                          <img class="third-slide" src="\intranetSDB\images\CCXP2016\Alta\Sanrio - CCXP 2016-36.jpg" style="width:100%" alt="Third slide">
+                        </div>
+
+                         <div class="item">
+                                <img class="third-slide" src="\intranetSDB\images\CCXP2016\Alta\Sanrio - CCXP 2016-15.jpg" style="width:100%" alt="Third slide">
+                              </div>
+
+                         <div class="item">
+                                <img class="third-slide" src="\intranetSDB\images\CCXP2016\Alta\Sanrio - CCXP 2016-16.jpg" style="width:100%" alt="Third slide">
+                              </div>
+
+                         <div class="item">
+                                <img class="third-slide" src="\intranetSDB\images\CCXP2016\Alta\Sanrio - CCXP 2016-76.jpg" style="width:100%" alt="Third slide">
+                              </div>
+
+                         <div class="item">
+                                <img class="third-slide" src="\intranetSDB\images\CCXP2016\Alta\Sanrio - CCXP 2016-79.jpg" style="width:100%" alt="Third slide">
+                              </div>
+
+                         <div class="item">
+                                <img class="third-slide" src="\intranetSDB\images\CCXP2016\Alta\Sanrio - CCXP 2016-20.jpg" style="width:100%" alt="Third slide">
+                              </div>
+
+                         <div class="item">
+                                <img class="third-slide" src="\intranetSDB\images\CCXP2016\Alta\Sanrio - CCXP 2016-21.jpg" style="width:100%" alt="Third slide">
+                              </div>
+
+                         <div class="item">
+                                <img class="third-slide" src="\intranetSDB\images\CCXP2016\Alta\Sanrio - CCXP 2016-22.jpg" style="width:100%" alt="Third slide">
+                              </div>
+
+                         <div class="item">
+                                <img class="third-slide" src="\intranetSDB\images\CCXP2016\Alta\Sanrio - CCXP 2016-23.jpg" style="width:100%" alt="Third slide">
+                              </div>
+                </div>
+                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+          </div><!-- /.carousel -->
+   </div>
+ </div>
+   </div>
+<div class="container-fluid">
+<div class="row">
+
+             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+             <h4 class="well well-sm">Momentos registrados durante evento no<br><strong>Shopping Ibirapuera.</strong><span class="glyphicon glyphicon-tags"></span><br></h4>
+              <div class="w3-content" style="max-width:100%">
+  <img class="mySlides1" src="\intranetSDB\images\Hello Kitty no Shopping Ibirapuera\HKSI-1" style="width:100%">
+  <img class="mySlides1" src="\intranetSDB\images\Hello Kitty no Shopping Ibirapuera\HKSI-2" style="width:100%">
+  <img class="mySlides1" src="\intranetSDB\images\Hello Kitty no Shopping Ibirapuera\HKSI-8" style="width:100%">
+  <img class="mySlides1" src="\intranetSDB\images\Hello Kitty no Shopping Ibirapuera\HKSI-4" style="width:100%">
+  <img class="mySlides1" src="\intranetSDB\images\Hello Kitty no Shopping Ibirapuera\HKSI-5" style="width:100%">
+  <img class="mySlides1" src="\intranetSDB\images\Hello Kitty no Shopping Ibirapuera\HKSI-6" style="width:100%">
+<script>
+  var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides1");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+
+</script>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col s2">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="\intranetSDB\images\Hello Kitty no Shopping Ibirapuera\HKSI-1" style="width:100%" onclick="currentDiv(1)">
+    </div>
+    <div class="w3-col s2">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="\intranetSDB\images\Hello Kitty no Shopping Ibirapuera\HKSI-2" style="width:100%" onclick="currentDiv(2)">
+    </div>
+    <div class="w3-col s2">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="\intranetSDB\images\Hello Kitty no Shopping Ibirapuera\HKSI-8" style="width:100%" onclick="currentDiv(3)">
+    </div>
+    <div class="w3-col s2">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="\intranetSDB\images\Hello Kitty no Shopping Ibirapuera\HKSI-4" style="width:100%" onclick="currentDiv(4)">
+    </div>
+     <div class="w3-col s2">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="\intranetSDB\images\Hello Kitty no Shopping Ibirapuera\HKSI-5" style="width:100%" onclick="currentDiv(5)">
+    </div>
+    <div class="w3-col s2">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="\intranetSDB\images\Hello Kitty no Shopping Ibirapuera\HKSI-6" style="width:100%" onclick="currentDiv(6)">
+    </div>
+
+
+  </div>
+
+
+</div>
+</div>
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+  
+      
+      
+       <a href="#myModal" data-toggle="modal" data-target="#myModal"><br><br><br><span class="glyphicon glyphicon-signal logo slideanim"></span></a>
+        <h4 class="alert alert-info">Como criamos e entregamos valor para satisfazer as<strong> necessidades e desejos em potencial?</strong></h4>
+        
+                <div class="modal fade" id="myModal" role="dialog">
+             <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;
+                  </button>
+                    
+                  <h2 class="modal-title">Produto, Preço, Praça, Propaganda, Pessoas.</h2>
+                </div>
+          <div class="modal-body">
+            <h4>Nosso objetivo de oferecer os meios para enriquecer a comunicação interpessoal permanece consistente em todas as atividades da Sanrio por todos os continentes. O ato de presentear está no coração do nosso negócio, e vemos cada cliente como o comprador de um presente – mesmo que seja apenas uma lembrancinha para ele mesmo. Um pequeno presente traz de fato um grande sorriso. A Sanrio fornece um veículo aos jovens, e aos jovens de coração, para que possam expressar seus sentimentos a amigos e familiares – cada produto nosso traz uma mensagem de amizade e felicidade. Presentear alguém com um gracioso kit de papel de carta da Hello kitty não diz apenas “vamos manter contato”, ele oferece o meio para fazê-lo.
+            </h4>
+          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+         </div>
+              </div><!-- class="content" -->      
+             </div><!-- class="modal dialog" -->
+            </div><!-- class="modal fade" -->
+            </div>
+            </div>
+            </div>
+  
+
+
+
+   <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
+
+  <h2><strong>Designer</strong></h2>
+  <hr class="featurette-divider">
+  <div class="col-sm-6 box2">
+ 
+     <a href="#myModal1" data-toggle="modal" data-target="#myModal1"><br><br><span class="glyphicon glyphicon-globe logo slideanim"></span></a>
+       <h4 class="alert alert-info"><strong>O que criamos? Como são criados?</strong></h4>  
+   
+            <div class="modal fade" id="myModal1" role="dialog">
+             <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;
+                  </button>
+                    
+                  <h2 class="modal-title">Divertido e Funcional</h2>
+                </div>
+          <div class="modal-body">
+            <h4>Os produtos Sanrio formam um amplo spectro de categorias incluindo papelaria, material escolar, bolsas, acessórios, decoração, personagens em doces e pelúcia. Estes produtos, que representam também um estilo de vida, são para todas as partes do dia, da manhã até a noite. Os presentes Sanrio são apropriados para todas as ocasiões que envolvem o ato de presentear, de aniversários ao Natal, outros feriados, formaturas, parabenizações, visitas a amigos ou parentes e muito mais. Desde mochilas em cores vivas e lancheiras para crianças da pré-escola, até capas para celulares, bolsas e acessórios da moda para adolescentes e adultos, a Sanrio tem algo para todo o mundo. As equipes de planejamento e design estão continuamente desenvolvendo novos produtos e desenhos de personagens para atender às necessidades, que mudam constantemente, de vários clientes. Nós ouvimos nossos convidados, amigos e clientes porque um presente Sanrio é verdadeiramente mais do que um simples presente, é uma expressão de amor e amizade. É com um pequeno presente que se faz um grande sorriso!
+            </h4>
+          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+         </div>
+              </div><!-- class="content" -->      
+             </div><!-- class="modal dialog" -->
+            </div><!-- class="modal fade" -->
+ </div>
+
+
+
+   <div class="col-sm-6  text-center">
+            <div class="w3-content w3-section" style="max-width:100%">
+  <img class="mySlides w3-animate-fading" src="http:\\192.168.1.3\intranetSDB\images\CCXP2016\Baixa\CCXP2016-1.jpg" style="width: 100%">
+  <img class="mySlides w3-animate-fading" src="http:\\192.168.1.3\intranetSDB\images\CCXP2016\Baixa\CCXP2016-2.jpg" style="width: 100%">
+  <img class="mySlides w3-animate-fading" src="http:\\192.168.1.3\intranetSDB\images\CCXP2016\Baixa\CCXP2016-2.jpg" style="width: 100%">
+  <img class="mySlides w3-animate-fading" src="http:\\192.168.1.3\intranetSDB\images\CCXP2016\Baixa\Sanrio - CCXP 2016-48.jpg" style="width: 100%">
+  </div>
+  </div>  
+ 
+    <div class="col-sm-4">     
+      <div class="hoverzoom">
+        <img src="http://192.168.1.3/intranetSDB/images/xo_cowboy.jpg" alt="Hello Kitty">
+       <div class="retina">
+        <p><strong>Badtz-Maru</strong></p>
+        <p>É um pinguim muito debochado. Vive com sua mãe e seu pai, um grande jogador de fliperama, em Gorgeoustown.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">      
+      <div class="hoverzoom">
+        <img src="http://192.168.1.3/intranetSDB/images/co_chocolaterie_01.jpg" alt="Chococat">
+        <div class="retina">
+        <p><strong>Chococat</strong></p>
+        <p>Seu nome vem de seu focinho cor-de-chocolate</p>
+        </div>
+     </div>
+    </div>
+    <div class="col-sm-4">
+     
+      <div class="hoverzoom">
+        <img src="http://192.168.1.3/intranetSDB/images/mm_poa.jpg" alt="My Melody">
+       <div class="retina">
+        <p><strong>My Melody</strong></p>
+        <p>Sua marca registrada é um lindo capuz que sua avó costurou especialmente para ela.</p>
+        </div>
+           </div>
+          </div>    
+
+<div class="row text-center">
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+ <hr class="featurette-divider">
+<footer><a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>&copy; 1976, 2016 SANRIO CO., LTD. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+</div>
+    
+
+
+
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+  var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 9000);    
+}
+
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>

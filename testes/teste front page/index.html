@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Intranet_SDB</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+
+  } 
+
+.box2{
+    width: 50%;
+    height: 200px;
+    background-image: url("http://192.168.1.3/intranetSDB/images/xo_cowboy.jpg");
+    display: block;
+    background-size: cover;
+    -webkit-transition: width 2s, height 2s, linear 1s;
+    transition: width 2s, height 2s, linear 1s;
+
+}
+
+.box2:hover {
+    width: 100%;
+    height: 300px;
+
+}
+
+  .box {
+    border-style: solid;
+    border-width: 0px;
+    display: block;
+    width: 100%;
+    height: 200px;
+    background-image: url("http://192.168.1.3/intranetSDB/images/Gudetama.png");
+    background-size: cover;
+    -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.box:hover {
+    background-image: url("http://192.168.1.3/intranetSDB/images/Gudetama.png");
+    width: 100%;
+    height: 200px;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+  .mySlides {
+    display:none;
+  }
+.demo {
+  cursor:pointer;
+}
+
+  .jumbotron {
+      background-color: #1E90FF;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .parallax { 
+    /* The image used */
+    background-image: url("http://192.168.1.3/intranetSDB/images/ku_sketchy.jpg");
+
+
+    /* Set a specific height */
+    min-height: 300px; 
+   
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+   .hoverzoom {
+	position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.hoverzoom > img {
+   width: 100%; 
+	border-radius: 2px;
+	-webkit-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	    -moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	     -ms-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	      -o-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	         transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+}
+.hoverzoom:hover > img {
+	-webkit-transform: scale(1.5);
+	   -moz-transform: scale(1.5);
+	    -ms-transform: scale(1.5);
+	     -o-transform: scale(1.5);
+	        transform: scale(1.5);
+}
+.hoverzoom .retina{
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;    
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);    
+    border-radius: 2px;
+    text-align: center;
+    padding: 30px;
+ 
+    -webkit-transition:	 all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	    -moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	     -ms-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	      -o-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	         transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000); 
+}
+.hoverzoom:hover .retina {
+    opacity: 1;
+    box-shadow: inset 0 0 100px 50px rgba(0,0,0,.5);
+    
+}
+.hoverzoom .retina p {
+	color: #fff;
+}
+.hoverzoom .retina a {
+	display: block;
+	width: 150px;
+	background: #6fc5e9;
+	border: 1px solid #59afd4;
+	border-radius: 4px;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	padding: 10px 15px;
+	margin: 16px auto 0;
+}
+
+.dropbtn {
+
+    background-color: #1E90FF;
+    color: #fff;
+    padding: 16px 20px;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+    
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1E90FF;
+    min-width: 200px;
+
+    box-shadow: 0px 8px 16px 0px rgba(143, 186, 255, 1);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #1E90FF}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #fff;
+
+     color: #1E90FF;
+
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+    color: #ffffff;
+}
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #1E90FF;
+      font-size: 50px;
+  }
+  .logo {
+      color: #1E90FF;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #1E90FF;
+  }
+  .carousel-indicators li {
+      border-color: #1E90FF;
+  }
+  .carousel-indicators li.active {
+      background-color: #1E90FF;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #1E90FF; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(30, 144, 255, 1);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #1E90FF;
+      background-color: #fff !important;
+      color: #1E90FF;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #1E90FF !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #1E90FF;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: #1E90FF;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #1E90FF !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #1E90FF;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 1280px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">INTRANET</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li> <a href="#about">ABOUT</a></li>
+        <li><a href="#marketing">MARKETING</a></li>
+        <li><a href="#designer">DESIGNER</a></li>
+        <li><a href="#contato">CONTATO</a></li>
+        <li><a href="#agenda">AGENDA</a></li>
+        <li class="collapse navbar-collapse dropdown">
+   
+  <button class="dropbtn">LISTAR+<span class="glyphicon glyphicon-sort-by-attributes"></span></button>
+  <div class="dropdown-content">
+    <a href="http:\\192.168.1.3\intranetSDB\M-formulario.html">FORMULÁRIOS</a>
+    <a href="http:\\192.168.1.3\intranetSDB\politicasProcedimentos.html">POLITICAS &<br>PROCEDIMENTOS</a>
+    <a href="http:\\192.168.1.3\intranetSDB\utilidades.html">UTILIDADES</a>
+  </div>
+        </li>      
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>Sanrio do Brasil</h1> 
+  <p>Small Gift, Big Smile</p> 
+  
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Institucional</h2><br>
+      <h4>A Sanrio é a designer e distribuidora mundial de artigos de papelaria, material escolar, presentes e acessórios, que trazem como marca os seus personagens. A Sanrio talvez seja mais conhecida pela Hello Kitty®, nossa estrela e símbolo corporativo...</h4><br>
+      <p>A Sanrio foi fundada em 1960 por Shintaro Tsuji, que criou uma linha de produtos com personagens para as ocasiões em que as pessoas precisam presentear alguém. Hoje, o Sr. Tsuji é o presidente da Sanrio Company, Ltd. , sediada em Toquio e com distribuidores por todo o Japão, Sudeste Asiático, Américas e Europa.</p>
+      <br>
+      <div class="panel-group text-center" id="accordion">
+     <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">O que é a Sanrio?</a>
+        </h4>
+      </div>
+        <div id="collapse1" class="panel-collapse collapse in">
+        <div class="panel-body">A Sanrio é a designer e distribuidora mundial de artigos de papelaria, material escolar, presentes e acessórios, que trazem como marca os seus personagens. A Sanrio talvez seja mais conhecida pela Hello Kitty®, nossa estrela e símbolo corporativo. Porém ela é apenas um de muitos personagens e desenhos da Sanrio que trazem vida a nossos produtos . Entre os outros personagens estão o Pochacco®, nosso cachorrinho atleta, e o levado Badtz Maru®.
+
+  A Sanrio foi fundada em 1960 por Shintaro Tsuji, que criou uma linha de produtos com personagens para as ocasiões em que as pessoas precisam presentear alguém. Hoje, o Sr. Tsuji é o presidente da Sanrio Company, Ltd. , sediada em Toquio e com distribuidores por todo o Japão, Sudeste Asiático, Américas e Europa.
+
+  A Sanrio Inc., subsidiária da Sanrio Co., Ltd, está sediada no sul de San Francisco, na California. A Sanrio Inc. distribui produtos pela America do Norte, Central e do Sul. A Sanrio começou no ocidente em 1976 com uma loja no Eastridge Mall em San Jose, California. Hoje nas Américas, mais de 4000 localidades exibem com orgulho os produtos com os personagens Sanrio. A Sanrio é proprietária e operadora de mais de 40 destas lojas. As demais são de propriedade de operadores independentes que partilham da nossa filosofia “pequeno presente, grande sorriso”.</div>
+      </div>
+      </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Comunicação Social</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">Nosso objetivo de oferecer os meios para enriquecer a comunicação interpessoal permanece consistente em todas as atividades da Sanrio por todos os continentes. O ato de presentear está no coração do nosso negócio, e vemos cada cliente como o comprador de um presente – mesmo que seja apenas uma lembrancinha para ele mesmo. Um pequeno presente traz de fato um grande sorriso. A Sanrio fornece um veículo aos jovens, e aos jovens de coração, para que possam expressar seus sentimentos a amigos e familiares – cada produto nosso traz uma mensagem de amizade e felicidade. Presentear alguém com um gracioso kit de papel de carta da Hello kitty não diz apenas “vamos manter contato”, ele oferece o meio para fazê-lo.</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Pequeno Presente, Grande Sorriso</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">É mais do que uma frase de efeito, é a base de tudo o que fazemos, e temos o orgulho de dizer que temos criado sorrisos por mais de 40 anos. Na Sanrio nós acreditamos que um presente é mais do que apenas um presente. È um meio de expressarmos nossos sentimentos por outras pessoas. Seja criando um artigo de papelaria, uma loja ou uma série de desenho animado para a TV, esta filosofia está sempre presente nas atividades da Sanrio. De nossas lojas e quiosques, que exibem as últimas coleções da Sanrio, até os espaços menores que oferecem nossos produtos, convidamos todos os nossos amigos e visitantes para experimentar a mágica destas quatro simples 
+        </div>
+      </div>
+    </div>
+    </div>    
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo slideanim"></span>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h4><strong>VALORES:</strong>
+        Felicidade, Amizade, Comprometimento, Respeito, Transparencia, Ética e Confiança.</h4>
+       <h4><strong>MISSÃO:</strong> A missão da Sanrio é criar e desenvolver propriedades intelectuais originais e as colocar em prática com uma variedade de produtos de qualidade, serviços e atividade que inspirem nossos consumidores a terem experiências únicas e exclusivas no mundo inteiro.</h4>
+      <h4><strong>VISÃO:</strong> A visão da Sanrio é promover a comunicação social compartilhando felicidade, amizade e diversão através da Criatividade e Inovação.</h4>
+    </div>
+   </div>
+</div>
+
+<!-- Container (Marketing Section) -->
+<div id="marketing" class="container-fluid text-center">
+  <h2>Marketing</h2>
+  <h4>Aqui você fica sabendo das novidades que promovem a marca. Fica a par da ampla comunicação social envolvida nesse processo... Além de acompanhar de pertinho todo o carinho e comprometimento da nossa equipe de Marketing e dos nossos parceiros... </h4>
+  <br>
+  <div class="row">
+
+<div class="col-sm-6">
+<div class="w3-content" style="max-width:1024px">
+  <img class="mySlides2" src="http:\\192.168.1.3\intranetSDB\images\CCXP2016\Baixa\CCXP2016-1.jpg" style="width:100%">
+  <img class="mySlides2" src="http:\\192.168.1.3\intranetSDB\images\CCXP2016\Baixa\Sanrio - CCXP 2016-5.jpg" style="width:100%">
+  <img class="mySlides2" src="http:\\192.168.1.3\intranetSDB\images\CCXP2016\Baixa\Sanrio - CCXP 2016-6.jpg" style="width:100%">
+  <img class="mySlides2" src="http:\\192.168.1.3\intranetSDB\images\CCXP2016\Baixa\Sanrio - CCXP 2016-24.jpg" style="width:100%">
+  <img class="mySlides2" src="http:\\192.168.1.3\intranetSDB\images\CCXP2016\Baixa\Sanrio - CCXP 2016-8.jpg" style="width:100%">
+  <img class="mySlides2" src="http:\\192.168.1.3\intranetSDB\images\CCXP2016\Baixa\Sanrio - CCXP 2016-9.jpg" style="width:100%">
+  <img class="mySlides2" src="http:\\192.168.1.3\intranetSDB\images\CCXP2016\Baixa\Sanrio - CCXP 2016-10.jpg" style="width:100%">
+  <img class="mySlides2" src="http:\\192.168.1.3\intranetSDB\images\CCXP2016\Baixa\Sanrio - CCXP 2016-26.jpg" style="width:100%">
+  <img class="mySlides2" src="http:\\192.168.1.3\intranetSDB\images\CCXP2016\Baixa\Sanrio - CCXP 2016-12.jpg" style="width:100%">
+  <img class="mySlides2" src="http:\\192.168.1.3\intranetSDB\images\CCXP2016\Baixa\Sanrio - CCXP 2016-13.jpg" style="width:100%">
+  <img class="mySlides2" src="http:\\192.168.1.3\intranetSDB\images\CCXP2016\Baixa\Sanrio - CCXP 2016-36.jpg" style="width:100%">
+  <img class="mySlides2" src="http:\\192.168.1.3\intranetSDB\images\CCXP2016\Baixa\Sanrio - CCXP 2016-15.jpg" style="width:100%">
+  <img class="mySlides2" src="http:\\192.168.1.3\intranetSDB\images\CCXP2016\Baixa\Sanrio - CCXP 2016-16.jpg" style="width:100%">
+  <img class="mySlides2" src="http:\\192.168.1.3\intranetSDB\images\CCXP2016\Baixa\Sanrio - CCXP 2016-76.jpg" style="width:100%">
+  <img class="mySlides2" src="http:\\192.168.1.3\intranetSDB\images\CCXP2016\Baixa\Sanrio - CCXP 2016-18.jpg" style="width:100%">
+  <img class="mySlides2" src="http:\\192.168.1.3\intranetSDB\images\CCXP2016\Baixa\Sanrio - CCXP 2016-79.jpg" style="width:100%">
+  <img class="mySlides2" src="http:\\192.168.1.3\intranetSDB\images\CCXP2016\Baixa\Sanrio - CCXP 2016-20.jpg" style="width:100%">
+  <img class="mySlides2" src="http:\\192.168.1.3\intranetSDB\images\CCXP2016\Baixa\Sanrio - CCXP 2016-21.jpg" style="width:100%">
+  <img class="mySlides2" src="http:\\192.168.1.3\intranetSDB\images\CCXP2016\Baixa\Sanrio - CCXP 2016-22.jpg" style="width:100%">
+  <img class="mySlides2" src="http:\\192.168.1.3\intranetSDB\images\CCXP2016\Baixa\Sanrio - CCXP 2016-23.jpg" style="width:100%">
+</div>
+
+<div class="w3-center">
+  <div class="w3-section">
+    <button class="w3-btn" onclick="plusDivs(-1)">❮ Prev</button>
+    <button class="w3-btn" onclick="plusDivs(1)">Next ❯</button>
+  </div>
+
+  <button class="w3-btn demo1" onclick="currentDiv(1)">1</button> 
+  <button class="w3-btn demo1" onclick="currentDiv(2)">2</button> 
+  <button class="w3-btn demo1" onclick="currentDiv(3)">3</button> 
+  <button class="w3-btn demo1" onclick="currentDiv(4)">4</button>
+  <button class="w3-btn demo1" onclick="currentDiv(5)">5</button>
+  <button class="w3-btn demo1" onclick="currentDiv(6)">6</button>
+  <button class="w3-btn demo1" onclick="currentDiv(7)">7</button>
+  <button class="w3-btn demo1" onclick="currentDiv(8)">8</button>
+  <button class="w3-btn demo1" onclick="currentDiv(9)">9</button>
+  <button class="w3-btn demo1" onclick="currentDiv(10)">10</button>
+
+
+  <button class="w3-btn demo1" onclick="currentDiv(11)">11</button>
+  <button class="w3-btn demo1" onclick="currentDiv(12)">12</button>
+  <button class="w3-btn demo1" onclick="currentDiv(13)">13</button>
+  <button class="w3-btn demo1" onclick="currentDiv(14)">14</button>
+  <button class="w3-btn demo1" onclick="currentDiv(15)">15</button>
+  <button class="w3-btn demo1" onclick="currentDiv(16)">16</button>
+  <button class="w3-btn demo1" onclick="currentDiv(17)">17</button>
+  <button class="w3-btn demo1" onclick="currentDiv(18)">18</button>
+  <button class="w3-btn demo1" onclick="currentDiv(19)">19</button>
+  <button class="w3-btn demo1" onclick="currentDiv(20)">20</button>
+
+
+ 
+
+</div>
+<script>
+  var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides2");
+  var dots = document.getElementsByClassName("demo1");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
+
+</script>
+
+
+
+
+</div>
+
+<div class="col-sm-6">
+ <iframe " style="width:100%" height="380" src="https://www.youtube.com/embed/C3btODuXNTI" ></iframe>
+</div>
+
+<div class="dropdown">
+  <img class="img-responsive" src="http:\\192.168.1.3\intranetSDB\images\MKT_post.jpg" alt="Trolltunga Norway" style="max-width:100%" width="200" height="100">
+  <div class="dropdown-content">
+    <img src="http:\\192.168.1.3\intranetSDB\images\MKT_post.jpg" alt="Trolltunga Norway" width="354" height="527">
+    <div class="desc">Exposição O Mundo da Hello Kitty em Campinas</div>
+  </div>
+</div>
+  </div>
+   
+
+ 
+  <div class="row">
+   <h4>O QUE DIZEM NOSSOS CLIENTES</h4>
+  
+    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"Esta empresa é a melhor. Estou tão feliz com o resultado!"<br><span style="font-style:normal;">Daniel San, Vice President, EmpresaXXX</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Uma Palavra... UAULL!!"<br><span style="font-style:normal;">John San, EmpresaXXXZ</span></h4>
+      </div>
+      <div class="item">
+        <h4>"A Sanrio superou todas as expectativas"<br><span style="font-style:normal;">Daniel San, Diretor Financeiro, EmpresaXPTO</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  </div>
+
+</div>
+
+<!-- Container (Designer Section) -->
+
+<div id="designer" class="container-fluid text-center">
+
+  <h2><strong>Designer</strong></h2>
+  <h4>O que criamos? Como são criados?
+<boton type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal">Ler Mais &raquo;
+               </boton>
+            <div class="modal fade" id="myModal" role="dialog">
+             <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;
+                  </button>
+                    
+                  <h2 class="modal-title">Divertido e Funcional</h2>
+                </div>
+          <div class="modal-body">
+            <h4>Os produtos Sanrio formam um amplo spectro de categorias incluindo papelaria, material escolar, bolsas, acessórios, decoração, personagens em doces e pelúcia. Estes produtos, que representam também um estilo de vida, são para todas as partes do dia, da manhã até a noite. Os presentes Sanrio são apropriados para todas as ocasiões que envolvem o ato de presentear, de aniversários ao Natal, outros feriados, formaturas, parabenizações, visitas a amigos ou parentes e muito mais. Desde mochilas em cores vivas e lancheiras para crianças da pré-escola, até capas para celulares, bolsas e acessórios da moda para adolescentes e adultos, a Sanrio tem algo para todo o mundo. As equipes de planejamento e design estão continuamente desenvolvendo novos produtos e desenhos de personagens para atender às necessidades, que mudam constantemente, de vários clientes. Nós ouvimos nossos convidados, amigos e clientes porque um presente Sanrio é verdadeiramente mais do que um simples presente, é uma expressão de amor e amizade. É com um pequeno presente que se faz um grande sorriso!
+            </h4>
+          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+         </div>
+              </div><!-- class="content" -->      
+             </div><!-- class="modal dialog" -->
+            </div><!-- class="modal fade" -->
+  </h4>
+  
+  <p class="lead">As equipes de planejamento e design estão continuamente desenvolvendo novos produtos e desenhos de personagens para atender às necessidades mutaveis dos nossos clientes.Nós ouvimos nossos convidados, amigos e clientes porque um presente Sanrio é verdadeiramente mais do que um simples presente, é uma expressão de amor e amizade.
+            <span class="glyphicon glyphicon-heart-empty"></span>
+            <span class="glyphicon glyphicon-heart"></span>
+            <span class="glyphicon glyphicon-heart-empty"></span>
+          </p>
+          <div class="row slideanim">
+<div class="col-sm-6">
+            <div class="w3-content w3-section" style="max-width:100%">
+  <img class="mySlides w3-animate-fading" src="http:\\192.168.1.3\intranetSDB\images\CCXP2016\Baixa\CCXP2016-1.jpg" style="width: 100%">
+  <img class="mySlides w3-animate-fading" src="http:\\192.168.1.3\intranetSDB\images\CCXP2016\Baixa\CCXP2016-2.jpg" style="width: 100%">
+  <img class="mySlides w3-animate-fading" src="http:\\192.168.1.3\intranetSDB\images\CCXP2016\Baixa\CCXP2016-2.jpg" style="width: 100%">
+  <img class="mySlides w3-animate-fading" src="http:\\192.168.1.3\intranetSDB\images\CCXP2016\Baixa\Sanrio - CCXP 2016-48.jpg" style="width: 100%">
+  </div>
+  </div>
+  <div class="col-sm-6">
+   <div class="box" style="max-width:100%">
+   </div>
+   </div>
+   <div class="col-sm-6">
+   <div class="box2" style="max-width:100%">
+   </div>
+   </div>
+   
+
+  </div>       
+
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">     
+      <div class="hoverzoom">
+        <img src="http://192.168.1.3/intranetSDB/images/hk_nerd_02.jpg" alt="Hello Kitty">
+       <div class="retina">
+        <p><strong>Hello Kitty</strong></p>
+        <p>Hello Kitty é mais que uma marca, é um estilo de vida!</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">      
+      <div class="hoverzoom">
+        <img src="http://192.168.1.3/intranetSDB/images/co_chocolaterie_01.jpg" alt="Chococat">
+        <div class="retina">
+        <p><strong>Chococat</strong></p>
+        <p>Seu nome vem de seu focinho cor-de-chocolate</p>
+        </div>
+     </div>
+    </div>
+    <div class="col-sm-4">
+     
+      <div class="hoverzoom">
+        <img src="http://192.168.1.3/intranetSDB/images/mm_poa.jpg" alt="My Melody">
+       <div class="retina">
+        <p><strong>My Melody</strong></p>
+        <p>Sua marca registrada é um lindo capuz que sua avó costurou especialmente para ela.</p>
+        </div>
+           </div>
+      
+    </div>
+  </div> 
+</div>
+
+
+<!-- Container (Contato Section) -->
+
+<div id="contato" class="container-fluid bg-grey">
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+  <div class="row text-center">
+    <h2>Contatos</h2>
+  
+  
+  <div class="row slideanim">
+  <div class="col-sm-12">
+   <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#coll"><span class="glyphicon glyphicon-user"></span> SENIOR MANAGEMENT</a>
+        </h4>
+      </div>
+      <div id="coll" class="panel-collapse collapse">
+        <ul class="list-group">
+          <li class="list-group-item">Chris Daniels<br>C.O.O</li>
+        </ul>
+        <div class="panel-footer"><span class="glyphicon glyphicon-phone-alt" style="color: rgb(0, 102, 255);"></span> (11) 3515-<a data-toggle="tooltip" title="Ramal!">5155<br></a><a href="mailto:cdaniels@sanrio.com" style="color: rgb(0, 102, 255); text-decoration: none; display: inline;"><span class="glyphicon glyphicon-envelope"></span> cdaniels@sanrio.com
+                </a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="col-sm-4">
+   <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#coll1"><span class="glyphicon glyphicon-user"></span> LICENSING BRASIL</a>
+        </h4>
+      </div>
+      <div id="coll1" class="panel-collapse collapse">
+       <ul class="list-group">
+          <li class="list-group-item">Gian Catinella<br>Diretor Comercial</li>
+        </ul>
+        <div class="panel-footer"><span class="glyphicon glyphicon-phone-alt" style="color: rgb(0, 102, 255);"></span> (11) 3515-<a data-toggle="tooltip" title="Ramal!">5154<br></a><a href="mailto:gian.catinella@sanrio.com.br" style="color: rgb(0, 102, 255); text-decoration: none; display: inline;"><span class="glyphicon glyphicon-envelope"></span> gian.catinella@sanrio.com.br
+                </a></div>
+                <ul class="list-group">
+          <li class="list-group-item">Caroline Manha<br>Executiva de Contas Sénior</li>
+        </ul>
+        <div class="panel-footer"><span class="glyphicon glyphicon-phone-alt" style="color: rgb(0, 102, 255);"></span> (11) 3515-<a data-toggle="tooltip" title="Ramal!">5187<br></a><a href="mailto:caroline.manha@sanrio.com.br" style="color: rgb(0, 102, 255); text-decoration: none; display: inline;"><span class="glyphicon glyphicon-envelope"></span> caroline.manha@sanrio.com.br
+                </a></div>
+                <ul class="list-group">
+          <li class="list-group-item">Kaio Aramaqui<br>Aux Administradtivo Comercial</li>
+        </ul>
+        <div class="panel-footer"><span class="glyphicon glyphicon-phone-alt" style="color: rgb(0, 102, 255);"></span> (11) 3515-<a data-toggle="tooltip" title="Ramal!">5186<br></a><a href="mailto:kaio.aramaqui@sanrio.com.br" style="color: rgb(0, 102, 255); text-decoration: none; display: inline;"><span class="glyphicon glyphicon-envelope"></span> kaio.aramaqui@sanrio.com.br
+                </a></div>
+                </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="col-sm-4">
+   <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#coll2"><span class="glyphicon glyphicon-user"></span> LICENSING LATAM</a>
+        </h4>
+      </div>
+      <div id="coll2" class="panel-collapse collapse">
+             <ul class="list-group">
+          <li class="list-group-item">João Paulo Martins<br>Gerente de Licenciamento</li>
+        </ul>
+        <div class="panel-footer"><span class="glyphicon glyphicon-phone-alt" style="color: rgb(0, 102, 255);"></span> (11) 3515-<a data-toggle="tooltip" title="Ramal!">5168<br></a><a href="mailto:joao.paulo@sanrio.com.br" style="color: rgb(0, 102, 255); text-decoration: none; display: inline;"><span class="glyphicon glyphicon-envelope"></span> joao.paulo@sanrio.com.br
+                </a></div>
+                 <ul class="list-group">
+          <li class="list-group-item">Jennifer Romero<br>Analista Comercial</li>
+        </ul>
+        <div class="panel-footer"><span class="glyphicon glyphicon-phone-alt" style="color: rgb(0, 102, 255);"></span> (11) 3515-<a data-toggle="tooltip" title="Ramal!">5184<br></a><a href="mailto:jennifer.romero@sanrio.com.br" style="color: rgb(0, 102, 255); text-decoration: none; display: inline;"><span class="glyphicon glyphicon-envelope"></span> jennifer.romero@sanrio.com.br
+                </a></div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <div class="col-sm-4">
+   <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#coll3"><span class="glyphicon glyphicon-user"></span> CREATIVE DEPARTMENT</a>
+        </h4>
+      </div>
+      <div id="coll3" class="panel-collapse collapse">
+              <ul class="list-group">
+          <li class="list-group-item">Katia Nagatomo<br>Gerente do Grupo Criativo</li>
+        </ul>
+        <div class="panel-footer"><span class="glyphicon glyphicon-phone-alt" style="color: rgb(0, 102, 255);"></span> (11) 3515-<a data-toggle="tooltip" title="Ramal!">5156<br></a><a href="mailto:katia.nagatomo@sanrio.com.br" style="color: rgb(0, 102, 255); text-decoration: none; display: inline;"><span class="glyphicon glyphicon-envelope"></span> katia.nagatomo@sanrio.com.br
+                </a></div>
+                 <ul class="list-group">
+          <li class="list-group-item">Fernando Metolina<br>Coordenador do Grupo Criativo</li>
+        </ul>
+        <div class="panel-footer"><span class="glyphicon glyphicon-phone-alt" style="color: rgb(0, 102, 255);"></span> (11) 3515-<a data-toggle="tooltip" title="Ramal!">5161<br></a><a href="mailto:fernando.metolina@sanrio.com.br" style="color: rgb(0, 102, 255); text-decoration: none; display: inline;"><span class="glyphicon glyphicon-envelope"></span> fernando.metolina@sanrio.com.br
+                </a></div>
+                     <ul class="list-group">
+          <li class="list-group-item">Carolina Ribeiro<br>Designer Gráfico</li>
+        </ul>
+        <div class="panel-footer"><span class="glyphicon glyphicon-phone-alt" style="color: rgb(0, 102, 255);"></span> (11) 3515-<a data-toggle="tooltip" title="Ramal!">5157<br></a><a href="mailto:carolina.ribeiro@sanrio.com.br" style="color: rgb(0, 102, 255); text-decoration: none; display: inline;"><span class="glyphicon glyphicon-envelope"></span> carolina.ribeiro@sanrio.com.br
+                </a></div>     
+                <ul class="list-group">
+          <li class="list-group-item">Paula Nascimento<br>Designer Gráfico Jr.</li>
+        </ul>
+        <div class="panel-footer"><span class="glyphicon glyphicon-phone-alt" style="color: rgb(0, 102, 255);"></span> (11) 3515-<a data-toggle="tooltip" title="Ramal!">5160<br></a><a href="mailto:paula.nascimento@sanrio.com.br" style="color: rgb(0, 102, 255); text-decoration: none; display: inline;"><span class="glyphicon glyphicon-envelope"></span> paula.nascimento@sanrio.com.br
+                </a></div>     
+                <ul class="list-group">
+          <li class="list-group-item">Aline Tiemi<br>Designer Gráfico Sênior</li>
+        </ul>
+        <div class="panel-footer"><span class="glyphicon glyphicon-phone-alt" style="color: rgb(0, 102, 255);"></span> (11) 3515-<a data-toggle="tooltip" title="Ramal!">5159<br></a><a href="mailto:aline.tiemi@sanrio.com.br" style="color: rgb(0, 102, 255); text-decoration: none; display: inline;"><span class="glyphicon glyphicon-envelope"></span> aline.tiemi@sanrio.com.br
+                </a></div> 
+                <ul class="list-group">
+          <li class="list-group-item">Fernanda Akemi<br>Designer Gráfico Jr</li>
+        </ul>
+        <div class="panel-footer"><span class="glyphicon glyphicon-phone-alt" style="color: rgb(0, 102, 255);"></span> (11) 3515-<a data-toggle="tooltip" title="Ramal!">5161<br></a><a href="mailto:fernanda.ota@sanrio.com.br" style="color: rgb(0, 102, 255); text-decoration: none; display: inline;"><span class="glyphicon glyphicon-envelope"></span> fernanda.ota@sanrio.com.br
+                </a></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  </div>
+
+<div class="row slideanim">
+
+  <div class="col-sm-3">
+   <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#coll4"><span class="glyphicon glyphicon-user"></span> MARKETING</a>
+        </h4>
+      </div>
+      <div id="coll4" class="panel-collapse collapse">
+        <ul class="list-group">
+          <li class="list-group-item">Renata Pereto<br>Gerente de Marketing</li>
+        </ul>
+        <div class="panel-footer"><span class="glyphicon glyphicon-phone-alt" style="color: rgb(0, 102, 255);"></span> (11) 3515-<a data-toggle="tooltip" title="Ramal!">5170<br></a><a href="mailto:renata.pereto@sanrio.com.br" style="color: rgb(0, 102, 255); text-decoration: none; display: inline;"><span class="glyphicon glyphicon-envelope"></span> renata.pereto@sanrio.com.br
+                </a></div>
+                 <ul class="list-group">
+          <li class="list-group-item">Ponciana Lopes<br>Coordenadora de Marketing</li>
+        </ul>
+        <div class="panel-footer"><span class="glyphicon glyphicon-phone-alt" style="color: rgb(0, 102, 255);"></span> (11) 3515-<a data-toggle="tooltip" title="Ramal!">5166<br></a><a href="mailto:ponciana.lopes@sanrio.com.br" style="color: rgb(0, 102, 255); text-decoration: none; display: inline;"><span class="glyphicon glyphicon-envelope"></span> ponciana.lopes@sanrio.com.br
+                </a></div>
+                     <ul class="list-group">
+          <li class="list-group-item">Claudia Nascimento<br>Assistente de Marketing</li>
+        </ul>
+        <div class="panel-footer"><span class="glyphicon glyphicon-phone-alt" style="color: rgb(0, 102, 255);"></span> (11) 3515-<a data-toggle="tooltip" title="Ramal!">5188<br></a><a href="mailto:claudia.nascimento@sanrio.com.br" style="color: rgb(0, 102, 255); text-decoration: none; display: inline;"><span class="glyphicon glyphicon-envelope"></span>claudia.nascimento@sanrio.com.br
+                </a></div>     
+                <ul class="list-group">
+          <li class="list-group-item">Rafael Rissatto<br>Analista de Marketing Digital</li>
+        </ul>
+        <div class="panel-footer"><span class="glyphicon glyphicon-phone-alt" style="color: rgb(0, 102, 255);"></span> (11) 3515-<a data-toggle="tooltip" title="Ramal!">5172<br></a><a href="mailto:rafael.rissatto@sanrio.com.br" style="color: rgb(0, 102, 255); text-decoration: none; display: inline;"><span class="glyphicon glyphicon-envelope"></span> rafael.rissatto@sanrio.com.br
+                </a></div>     
+                <ul class="list-group">
+          <li class="list-group-item">Jackeline Hickman<br>Analista de Marketing</li>
+        </ul>
+        <div class="panel-footer"><span class="glyphicon glyphicon-phone-alt" style="color: rgb(0, 102, 255);"></span> (11) 3515-<a data-toggle="tooltip" title="Ramal!">5159<br></a><a href="mailto:jackeline.hickman@sanrio.com.br" style="color: rgb(0, 102, 255); text-decoration: none; display: inline;"><span class="glyphicon glyphicon-envelope"></span> jackeline.hickman@sanrio.com.br
+                </a></div> 
+                
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="col-sm-3">
+   <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#coll5"><span class="glyphicon glyphicon-user"></span> ACCOUNTING</a>
+        </h4>
+      </div>
+      <div id="coll5" class="panel-collapse collapse">
+       <ul class="list-group">
+          <li class="list-group-item">Alexandre Grecco<br>Gerente Contábil / Financeiro</li>
+        </ul>
+        <div class="panel-footer"><span class="glyphicon glyphicon-phone-alt" style="color: rgb(0, 102, 255);"></span> (11) 3515-<a data-toggle="tooltip" title="Ramal!">5174<br></a><a href="mailto:wgrecco@sanrio.com.br" style="color: rgb(0, 102, 255); text-decoration: none; display: inline;"><span class="glyphicon glyphicon-envelope"></span> wgrecco@sanrio.com.br
+                </a></div>
+                 <ul class="list-group">
+          <li class="list-group-item">Adenilson Giovanini<br>Coordenador Contábil</li>
+        </ul>
+        <div class="panel-footer"><span class="glyphicon glyphicon-phone-alt" style="color: rgb(0, 102, 255);"></span> (11) 3515-<a data-toggle="tooltip" title="Ramal!">5176<br></a><a href="mailto:adenilson.giovanini@sanrio.com.br" style="color: rgb(0, 102, 255); text-decoration: none; display: inline;"><span class="glyphicon glyphicon-envelope"></span>adenilson.giovanini@sanrio.com.br
+                </a></div>
+                     <ul class="list-group">
+          <li class="list-group-item">Ricardo Torres<br>Designer Gráfico</li>
+        </ul>
+        <div class="panel-footer"><span class="glyphicon glyphicon-phone-alt" style="color: rgb(0, 102, 255);"></span> (11) 3515-<a data-toggle="tooltip" title="Ramal!">5175<br></a><a href="mailto:ricardo.torres@sanrio.com.br" style="color: rgb(0, 102, 255); text-decoration: none; display: inline;"><span class="glyphicon glyphicon-envelope"></span> ricardo.torres@sanrio.com.br
+                </a></div>     
+                <ul class="list-group">
+          <li class="list-group-item">Tattiane Muchão<br>Analista Financeiro</li>
+        </ul>
+        <div class="panel-footer"><span class="glyphicon glyphicon-phone-alt" style="color: rgb(0, 102, 255);"></span> (11) 3515-<a data-toggle="tooltip" title="Ramal!">5179<br></a><a href="mailto:tattiane.mrsantos@sanrio.com.br" style="color: rgb(0, 102, 255); text-decoration: none; display: inline;"><span class="glyphicon glyphicon-envelope"></span> tattiane.mrsantos@sanrio.com.br
+                </a></div>     
+                <ul class="list-group">
+          <li class="list-group-item">Lucelane Vieira<br>Analista Fiscal Jr.</li>
+        </ul>
+        <div class="panel-footer"><span class="glyphicon glyphicon-phone-alt" style="color: rgb(0, 102, 255);"></span> (11) 3515-<a data-toggle="tooltip" title="Ramal!">5180<br></a><a href="mailto:lucelane.vieira@sanrio.com.br" style="color: rgb(0, 102, 255); text-decoration: none; display: inline;"><span class="glyphicon glyphicon-envelope"></span> lucelane.vieira@sanrio.com.br
+                </a></div> 
+                <ul class="list-group">
+          <li class="list-group-item">Aline Silva<br>Assistente Contábil</li>
+        </ul>
+        <div class="panel-footer"><span class="glyphicon glyphicon-phone-alt" style="color: rgb(0, 102, 255);"></span> (11) 3515-<a data-toggle="tooltip" title="Ramal!">5177<br></a><a href="mailto:aline.silva@sanrio.com.br" style="color: rgb(0, 102, 255); text-decoration: none; display: inline;"><span class="glyphicon glyphicon-envelope"></span> aline.silva@sanrio.com.br
+                </a></div>
+                <ul class="list-group">
+          <li class="list-group-item">Glaucia Neves<br>Assistente Financeiro</li>
+        </ul>
+        <div class="panel-footer"><span class="glyphicon glyphicon-phone-alt" style="color: rgb(0, 102, 255);"></span> (11) 3515-<a data-toggle="tooltip" title="Ramal!">5178<br></a><a href="mailto:glaucia.neves@sanrio.com.br" style="color: rgb(0, 102, 255); text-decoration: none; display: inline;"><span class="glyphicon glyphicon-envelope"></span> glaucia.neves@sanrio.com.br
+                </a></div>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="col-sm-3">
+   <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#coll6"><span class="glyphicon glyphicon-user"></span> LEGAL</a>
+        </h4>
+      </div>
+      <div id="coll6" class="panel-collapse collapse">
+        <ul class="list-group">
+          <li class="list-group-item">Alexandre Taguti<br>Advogado</li>
+        </ul>
+        <div class="panel-footer"><span class="glyphicon glyphicon-phone-alt" style="color: rgb(0, 102, 255);"></span> (11) 3515-<a data-toggle="tooltip" title="Ramal!">5173<br></a><a href="mailto:juridico@sanrio.com.br" style="color: rgb(0, 102, 255); text-decoration: none; display: inline;"><span class="glyphicon glyphicon-envelope"></span> juridico@sanrio.com.br
+                </a></div>
+                <ul class="list-group">
+          <li class="list-group-item">Jéssica Santana<br>Auxiliar Administradtivo</li>
+        </ul>
+        <div class="panel-footer"><span class="glyphicon glyphicon-phone-alt" style="color: rgb(0, 102, 255);"></span> (11) 3515-<a data-toggle="tooltip" title="Ramal!">5167<br></a><a href="mailto:jessica.santana@sanrio.com.br" style="color: rgb(0, 102, 255); text-decoration: none; display: inline;"><span class="glyphicon glyphicon-envelope"></span> jessica.santana@sanrio.com.br
+                </a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <div class="col-sm-3">
+   <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#coll7"><span class="glyphicon glyphicon-user"></span> IT</a>
+        </h4>
+      </div>
+      <div id="coll7" class="panel-collapse collapse">
+        <ul class="list-group">
+          <li class="list-group-item">Janfer Silva<br>Coordenador de TI</li>
+        </ul>
+        <div class="panel-footer"><span class="glyphicon glyphicon-phone-alt" style="color: rgb(0, 102, 255);"></span> (11) 3515-<a data-toggle="tooltip" title="Ramal!">5189<br></a><a href="mailto:ti@sanrio.com.br" style="color: rgb(0, 102, 255); text-decoration: none; display: inline;"><span class="glyphicon glyphicon-envelope"></span> ti@sanrio.com.br
+                </a></div>
+                <ul class="list-group">
+          <li class="list-group-item">André Nascimento<br>Auxiliar de Suporte em TI</li>
+        </ul>
+        <div class="panel-footer"><span class="glyphicon glyphicon-phone-alt" style="color: rgb(0, 102, 255);"></span> (11) 3515-<a data-toggle="tooltip" title="Ramal!">5190<br></a><a href="mailto:andre.nascimento@sanrio.com.br" style="color: rgb(0, 102, 255); text-decoration: none; display: inline;"><span class="glyphicon glyphicon-envelope"></span> andre.nascimento@sanrio.com.br
+                </a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+<div class="row slideanim">
+
+<div class="col-sm-4">
+ <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#coll8"><span class="glyphicon glyphicon-user"></span> HR</a>
+        </h4>
+      </div>
+      <div id="coll8" class="panel-collapse collapse">
+        <ul class="list-group">
+          <li class="list-group-item">Glaucia Teixeira<br>Coordenador de RH</li>
+        </ul>
+        <div class="panel-footer"><span class="glyphicon glyphicon-phone-alt" style="color: rgb(0, 102, 255);"></span> (11) 3515-<a data-toggle="tooltip" title="Ramal!">5164<br></a><a href="mailto:glaucia.teixeira@sanrio.com.br" style="color: rgb(0, 102, 255); text-decoration: none; display: inline;"><span class="glyphicon glyphicon-envelope"></span> glaucia.teixeira@sanrio.com.br
+                </a></div>
+                <ul class="list-group">
+          <li class="list-group-item">Lilian Cristina<br>Auxiliar de RH</li>
+        </ul>
+        <div class="panel-footer"><span class="glyphicon glyphicon-phone-alt" style="color: rgb(0, 102, 255);"></span> (11) 3515-<a data-toggle="tooltip" title="Ramal!">5181<br></a><a href="mailto:lilian.cristina@sanrio.com.br" style="color: rgb(0, 102, 255); text-decoration: none; display: inline;"><span class="glyphicon glyphicon-envelope"></span> lilian.cristina@sanrio.com.br
+                </a></div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="col-sm-4">
+ <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#coll9"><span class="glyphicon glyphicon-earphone"></span> CONFERENCE ROOMS</a>
+        </h4>
+      </div>
+      <div id="coll9" class="panel-collapse collapse">
+       <ul class="list-group">
+          <li class="list-group-item">Sala Grande<a data-toggle="tooltip" title="Ramal!"> 5169</a></li>
+        </ul>
+                   <ul class="list-group">
+          <li class="list-group-item">Sala Média<a data-toggle="tooltip" title="Ramal!"> 5183</a></li>
+        </ul>
+          </div>
+      </div>
+    </div>
+</div>
+
+<div class="col-sm-4">
+ <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#coll10"><span class="glyphicon glyphicon-earphone"></span> OTHERS</a>
+        </h4>
+      </div>
+      <div id="coll10" class="panel-collapse collapse">
+       <ul class="list-group">
+          <li class="list-group-item">Para puxar ligação<a data-toggle="tooltip" title="Ramal!"> 55</a></li>
+        </ul>
+                       <ul class="list-group">
+          <li class="list-group-item">Portaria<a data-toggle="tooltip" title="Ramal!"> 50 ou #</a></li>
+        </ul>
+         </div>
+      </div>
+    </div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+<!-- Container (Agenda Section) -->
+<div id="agenda" class="container-fluid">
+  <h2 class="text-center">AGENDA</h2>
+  <div class="row">
+  <iframe src="http://192.168.1.3/intranetSDB/agenda/login.php"  style="width: 100% ;height: 600px" frameborder = "0" allowfullscreen sandbox></iframe>        
+      </div>
+       </div>
+<!-- Add Google Maps -->
+<div id="googleMap" style="height:400px;width:100%;">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.789665726115!2d-46.69582478465741!3d-23.61187518465774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50c958f6fb39%3A0x9a9e737bf8c4cbbf!2sR.+Samuel+Morse%2C+134+-+Cidade+Mon%C3%A7%C3%B5es%2C+S%C3%A3o+Paulo+-+SP!5e0!3m2!1spt-BR!2sbr!4v1483707614892" style="width: 100% ;height:400px;" frameborder = "0" allowfullscreen></iframe>
+</div>
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>&copy; 1976, 2016 SANRIO CO., LTD. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+  var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 9000);    
+}
+
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>

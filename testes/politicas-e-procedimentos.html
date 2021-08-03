@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/intranet.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.docs').hide();
+                $('a.menu').on('click',function(event){
+                    event.preventDefault();
+                    var value = $(this).attr("title");
+                    $('#'+value).toggle();
+                    //$('p ~ ul:first').toggle();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <header id="main-header" class="row">
+                <h1>Intranet Sanrio - SDB</h1>
+            </header>
+            <div class="row">
+                <div id="menu" class="col-md-3">
+
+                </div>
+
+                <div class="col-md-9">
+                    <article>
+                    <header><h2>Políticas e Procedimentos</h2></header>
+
+                    
+                    <p><span class="glyphicon glyphicon-file"></span> <a href="#" class="menu" title="or">ORGANOGRAMA</a></p>
+                    <ul id='or' class="docs">
+                        <li><a href="Formularios/Organograma em Portugues.pdf" target="_blank">Organograma</a></li>
+                    </ul>
+                    
+                    <p><span class="glyphicon glyphicon-file"></span> <a href="#" class="menu" title="rh">RECURSOS HUMANOS</a></p>
+                    <ul id='rh' class="docs">
+                        <li><a href="Formularios/P%20RH%20009%20%20Cargos%20e%20Salarios.pdf" target="_blank">Cargos e Salários</a></li>
+                        <li><a href="Formularios/P.RH.012.Controle de Ponto.pdf" target="_blank">Controle de Ponto</a></li>
+                        <li><a href="Formularios/P.RH.007. Demissão.pdf" target="_blank">Demissão</a></li>
+                        <li><a href="Formularios/P.RH.008. Férias.pdf" target="_blank">Férias</a></li>
+                        <li><a href="Formularios/Manual do Funcionário_re01_2016.pdf" target="_blank">Manual do Funcionário</a></li>
+                        <li><a href="Formularios/P%20RH%20010%20%20Subsidio%20de%20Idiomas.pdf" target="_blank">Subsídio de Idiomas</a></li>
+                        <li><a href="Formularios/P.RH.013.Transporte.pdf" target="_blank">Transporte</a></li>
+                        <li><a href="Formularios/P%20RH%20011%20Estacionamento.pdf" target="_blank">Vagas de estacionamento</a></li>
+                        <li><a href="Formularios/P.RH.015 Portas Abertas.pdf" target="_blank">Portas Abertas</a></li>                 
+                        <li><a href="Formularios/Politica de Controles Internos e Documentação.pdf" target="_blank">Politica de Controles Internos e Documentação</a></li> 
+                    </ul>
+                    
+                    <p><span class="glyphicon glyphicon-file"></span> <a href="#" class="menu" title='ti'>TI</a></p>
+                    <ul id="ti" class="docs">
+                        <li><a href="Formularios/D%20TI%20001%20Pol%C3%ADtica%20de%20TI%20rev_01.pdf">Política de TI</a></li>
+                    </ul>
+                    </article>
+                </div>
+            </div>
+            <div id="footer" class="row">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

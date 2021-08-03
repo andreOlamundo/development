@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/intranet.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/funcionarios.js"></script>
+        <script>
+            $(document).ready(function() {
+                var principais = "<p>Tronco chave: (11) 3515-5150</p>";
+                principais += "<p>FAX: (11) 3515-5185</p>";
+                principais += "<p>Portaria: 50 ou #</p>";
+                principais += "<p>Show Room: 3515-5169</p>"
+                $('#principais').html(principais);
+
+
+                function listaEmailsPorDepartamento(departamento) {
+                    funcionarios = sortByKey(funcionarios, departamento);
+                    switch (departamento) {
+                        case "Gerente":
+                            var emailgrupo = "gerentes@sanrio.com.br";break;
+                        case "Diretoria":
+                            var emailgrupo = "diretoria@sanrio.com.br";break;
+                        case "Financeiro":
+                            var emailgrupo = "financeiro@sanrio.com.br";break;
+                        case "Marketing":
+                            var emailgrupo = "marketing@sanrio.com.br";break;
+                        case "RH":
+                            var emailgrupo = "rh@sanrio.com.br";break;
+                        case "Logística":
+                            var emailgrupo = "logistica@sanrio.com.br";break;
+                        case "Design":
+                            var emailgrupo = "design@sanrio.com.br";break;
+                        case "Lojas Sanrio":
+                            var emailgrupo = "bourbon@sanrio.com.br";break;
+                        case "Jurídico":
+                            var emailgrupo = "juridico@sanrio.com.br";break;
+                        case "Licenciamento":
+                            var emailgrupo = "licenciamento@sanrio.com.br";break;
+                        <!--case "Vendas":-->
+                            <!--var emailgrupo = "vendas@sanrio.com.br";break;-->
+                        case "TI":
+                            var emailgrupo = "ti@sanrio.com.br";break;
+                        case "Geral":
+                            var emailgrupo = "sanrio@sanrio.com.br";break;
+                        default:
+                            var emailgrupo = "-";break;
+                    }
+                    //listagem = "<table class='table table-striped'>";
+                    //listagem += "<tr><th>Departamento</th><th>Grupo</th><th>emails</th></tr>";
+                    //console.log(funcionarios.length);
+                    grupo = new Array();
+                    for (var i = 0; i < funcionarios.length; i++) {
+                        //console.log(i);
+                        var funcDepto = funcionarios[i]['departamento'];
+                        var filter = new RegExp(departamento);
+                        if (funcDepto.match(filter)) {
+                            grupo.push([funcionarios[i]['nome'], funcionarios[i]['email']]);
+                            //console.log(grupo);
+                        }
+                    }
+                    //console.log(grupo);
+                    listagem = "<tr>";
+                    listagem += "<td>" + departamento.toUpperCase() + "</td><td><a href='mailto:" + emailgrupo + "'>"+emailgrupo+"</a></td><td>";
+
+                    for (var j = 0; j < grupo.length; j++) {
+                        //console.log(grupo[j][0]);
+                        listagem += "<a href=mailto:" + grupo[j][1] + ">" + grupo[j][0] + "</a><br>";
+                    }
+                    listagem += "</td>";
+                    listagem += "</tr>";
+                    //listagem += "</table>";
+
+                    $("#departamentos").append(listagem);
+                }
+
+                listaEmailsPorDepartamento('Geral');
+                <!--listaEmailsPorDepartamento('Gerente');-->
+                <!--listaEmailsPorDepartamento('Diretoria');-->
+
+                listaEmailsPorDepartamento('Design');
+                listaEmailsPorDepartamento('Financeiro');
+                listaEmailsPorDepartamento('Jurídico');
+                listaEmailsPorDepartamento('Licenciamento');
+                listaEmailsPorDepartamento('Logística');
+                <!--listaEmailsPorDepartamento('Lojas Sanrio');-->
+                listaEmailsPorDepartamento('Marketing');
+                listaEmailsPorDepartamento('RH');
+                listaEmailsPorDepartamento('TI');
+                <!--listaEmailsPorDepartamento('Vendas');-->
+
+            });
+
+
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <header id="main-header" class="row">
+                <h1>Intranet Sanrio - SDB</h1>
+            </header>
+            <div class="row">
+                <div id="menu" class="col-md-3">
+
+                </div>
+                <div class="col-md-9">
+                    <h2>Lista de Emails</h2>
+                    <div class="alert alert-info">
+                    <h3>Domínios</h3>
+                    <ul>
+                        <li>Sites<ul>
+                                <li><a href="http://www.sanrio.com.br">http://www.sanrio.com.br</a></li>
+                                <li><a href="http://www.hellokitty.com.br">http://www.hellokitty.com.br</a></li>
+                            </ul></li>
+                        <li>Loja Virtual<ul>
+                                <li><a href='http://loja.sanrio.com.br'>http://loja.sanrio.com.br</a></li>
+                            </ul></li>
+                        <li>Webmail<ul>
+                                <li><a href='http://webmail.sanrio.com.br'>http://webmail.sanrio.com.br</a></li>
+                            </ul></li>
+                    </ul>
+                    </div>
+
+                        <table class='table table-striped'>
+                            <thead>
+                            <tr>
+                                <th>Departamento / Cargo</th><th>Grupo</th><th>emails</th>
+                            </tr>
+                            </thead>
+                            <tbody id="departamentos"></tbody>
+                        </table>
+
+                </div>
+            </div>
+            <div id="footer" class="row">
+
+            </div>
+        </div>
+        <!--script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script-->
+    </body>
+</html>

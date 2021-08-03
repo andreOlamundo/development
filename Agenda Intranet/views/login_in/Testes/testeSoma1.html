@@ -1,0 +1,40 @@
+<html>
+<head>
+<script type="text/javascript">
+String.prototype.formatMoney = function(v) {
+    var v = this;
+
+    if(v.indexOf('.') === -1) {
+        v = v.replace(/([\d]+)/, "$1,00");
+    }
+
+    v = v.replace(/([\d]+)\.([\d]{1})$/, "$1,$20");
+    v = v.replace(/([\d]+)\.([\d]{2})$/, "$1,$2");
+    v = v.replace(/([\d]+)([\d]{3}),([\d]{2})$/, "$1.$2,$3");
+
+    return v;
+};
+function id( el ){
+    return document.getElementById( el );
+}
+function getMoney( el ){
+    var money = id( el ).value.replace( ',', '.' );
+    return parseFloat( money )*100;
+}
+function soma()
+{
+    var total = getMoney('campo1')+getMoney('campo2')+getMoney('campo3');
+    id('campo4').value = 'R$ '+ String(total/100).formatMoney();
+}
+</script>
+</head>
+<body>
+    <form action="" method="">
+        <input name="campo1" id="campo1" value="25,60" /><br />
+        <input name="campo2" id="campo2" value="5,15" /><br />
+        <input name="campo3" id="campo3" value="2,63" /><br />
+        <input name="campo4" readonly="readonly" id="campo4" /><br />
+        <input type="button" onclick="soma()" value="Soma de Valores" />
+    </form>
+</body>
+</html>

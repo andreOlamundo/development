@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Intranet_SDB</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+
+  }  
+  .mySlides {
+    display:none
+  }
+.demo {
+  cursor:pointer
+}
+
+  .jumbotron {
+      background-color: #1E90FF;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .parallax { 
+    /* The image used */
+    background-image: url("http://192.168.1.3/intranetSDB/images/ku_sketchy.jpg");
+
+
+    /* Set a specific height */
+    min-height: 300px; 
+   
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+   .hoverzoom {
+	position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.hoverzoom > img {
+   width: 100%; 
+	border-radius: 2px;
+	-webkit-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	    -moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	     -ms-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	      -o-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	         transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+}
+.hoverzoom:hover > img {
+	-webkit-transform: scale(1.5);
+	   -moz-transform: scale(1.5);
+	    -ms-transform: scale(1.5);
+	     -o-transform: scale(1.5);
+	        transform: scale(1.5);
+}
+.hoverzoom .retina{
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;    
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);    
+    border-radius: 2px;
+    text-align: center;
+    padding: 30px;
+ 
+    -webkit-transition:	 all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	    -moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	     -ms-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	      -o-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	         transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000); 
+}
+.hoverzoom:hover .retina {
+    opacity: 1;
+    box-shadow: inset 0 0 100px 50px rgba(0,0,0,.5);
+    
+}
+.hoverzoom .retina p {
+	color: #fff;
+}
+.hoverzoom .retina a {
+	display: block;
+	width: 150px;
+	background: #6fc5e9;
+	border: 1px solid #59afd4;
+	border-radius: 4px;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	padding: 10px 15px;
+	margin: 16px auto 0;
+}
+
+.dropbtn {
+    background-color: #1E90FF;
+    color: #fff;
+    padding: 16px;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+    
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1E90FF;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(143, 186, 255, 1);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #1E90FF}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #fff;
+
+     color: #1E90FF;
+
+}
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #1E90FF;
+      font-size: 50px;
+  }
+  .logo {
+      color: #1E90FF;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #1E90FF;
+  }
+  .carousel-indicators li {
+      border-color: #1E90FF;
+  }
+  .carousel-indicators li.active {
+      background-color: #1E90FF;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #1E90FF; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(30, 144, 255, 1);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #1E90FF;
+      background-color: #fff !important;
+      color: #1E90FF;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #1E90FF !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #1E90FF;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: #1E90FF;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #1E90FF !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #1E90FF;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 1280px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">INTRANET</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#marketing">MARKETING</a></li>
+        <li><a href="#designer">DESIGNER</a></li>
+        <li><a href="#ramais">RAMAIS</a></li>
+        <li><a href="#agenda">AGENDA</a></li>
+        <li class="collapse navbar-collapse dropdown">
+   
+  <button class="dropbtn">DROPDOWN</button>
+  <div class="dropdown-content">
+    <a class="active" href="http:\\192.168.1.3\intranetSDB\formularioPAR.html">FORMULÁRIOS</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+
+        </li>
+
+        
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>Sanrio do Brasil</h1> 
+  <p>Small Gift, Big Smile</p> 
+  
+</div>
+
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>fomulario_PAR</legend>
+
+<!-- Select Multiple -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="RF2_Departamento_Solicitante">Departamento Solicitante</label>
+  <div class="col-md-4">
+    <select id="RF2_Departamento_Solicitante" name="RF2_Departamento_Solicitante" class="form-control" multiple="multiple">
+      <option value="1">Dir Geral</option>
+      <option value="2">Dir Licenciamento</option>
+      <option value="3">Dir Novos Negócios</option>
+      <option value="4">Dir Vendas Diretas</option>
+      <option value="5">Depto Adm Fin</option>
+      <option value="6">Controladoria</option>
+      <option value="7">Depto Adm Fin</option>
+      <option value="8">Importação</option>
+      <option value="9">Depto Adm Fin</option>
+      <option value="10">Logística</option>
+      <option value="11">Depto Adm Fin</option>
+      <option value="12">R.H.</option>
+      <option value="13">Depto Adm Fin</option>
+      <option value="14">Tec. Inf.</option>
+      <option value="15">Depto Licenc.</option>
+      <option value="16">Internacionais</option>
+      <option value="17">Depto Licenc. Nacionais</option>
+      <option value="18">Depto Marketing</option>
+      <option value="19">Depto Marketing</option>
+      <option value="20">Fundo Promoção</option>
+      <option value="21">Depto Comercial</option>
+      <option value="22">Depto Design</option>
+      <option value="23">Depto WEB</option>
+      <option value="24">Depto Adm Fin.</option>
+    </select>
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="RF8_Decricao_Justificativa">Descrição / Justificativa</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="RF8_Decricao_Justificativa" name="RF8_Decricao_Justificativa">Digite aqui:</textarea>
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="RF9_REDP">Retornos Estimados do Projeto</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="RF9_REDP" name="RF9_REDP">Digite Aqui:</textarea>
+  </div>
+</div>
+
+<!-- File Button --> 
+<div class="form-group">
+  <label class="col-md-4 control-label" for="RF7_Anexo_De_Documentos">Anexo de Documentos</label>
+  <div class="col-md-4">
+    <input id="RF7_Anexo_De_Documentos" name="RF7_Anexo_De_Documentos" class="input-file" type="file">
+  </div>
+</div>
+
+<!-- Multiple Checkboxes -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="RF6_Ativo_Fixo">Ativo Fixo?</label>
+  <div class="col-md-4">
+  <div class="checkbox">
+    <label for="RF6_Ativo_Fixo-0">
+      <input type="checkbox" name="RF6_Ativo_Fixo" id="RF6_Ativo_Fixo-0" value="1">
+      Sim
+    </label>
+  </div>
+  <div class="checkbox">
+    <label for="RF6_Ativo_Fixo-1">
+      <input type="checkbox" name="RF6_Ativo_Fixo" id="RF6_Ativo_Fixo-1" value="2">
+      Não
+    </label>
+  </div>
+  </div>
+</div>
+
+<!-- Multiple Checkboxes -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="RF5_Previsão_No_Orçamento_Anual">Previsão no orçamento anual?</label>
+  <div class="col-md-4">
+  <div class="checkbox">
+    <label for="RF5_Previsão_No_Orçamento_Anual-0">
+      <input type="checkbox" name="RF5_Previsão_No_Orçamento_Anual" id="RF5_Previsão_No_Orçamento_Anual-0" value="1">
+      Sim
+    </label>
+  </div>
+  <div class="checkbox">
+    <label for="RF5_Previsão_No_Orçamento_Anual-1">
+      <input type="checkbox" name="RF5_Previsão_No_Orçamento_Anual" id="RF5_Previsão_No_Orçamento_Anual-1" value="2">
+      Não
+    </label>
+  </div>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="RF10_Previsão_De_Desembolso_Do_Projeto">Previsão de desembolso do Projeto</label>
+  <div class="col-md-4">
+    <button id="RF10_Previsão_De_Desembolso_Do_Projeto" name="RF10_Previsão_De_Desembolso_Do_Projeto" class="btn btn-warning">Incluir Nova Previsão</button>
+  </div>
+</div>
+
+<!-- Button (Double) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="RF12_Campo_Salvar"></label>
+  <div class="col-md-8">
+    <button id="RF12_Campo_Salvar" name="RF12_Campo_Salvar" class="btn btn-success">Salvar</button>
+    <button id="RF13_Campo_Cancelar" name="RF13_Campo_Cancelar" class="btn btn-danger">Cancelar</button>
+    <button id="RF14_Campo_Imprimir" name="RF14_Campo_Imprimir" class="btn btn-danger">Imprimir</button>
+    <button id="RF14_Campo_Reportar" name="RF15_Campo_Reportar" class="btn btn-danger">Reportar</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>&copy; 1976, 2016 SANRIO CO., LTD. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+  var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 9000);    
+}
+
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
